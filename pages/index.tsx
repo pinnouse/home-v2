@@ -68,19 +68,19 @@ const Home: NextPage = () => {
         <p>Bringing ideas to life one line at a time.</p>
         <a className={styles.link} href='mailto:nichol.wong@mail.utoronto.ca'>📧nichol.wong@mail.utoronto.ca</a>
         <a className={styles.link} href="https://github.com/pinnouse">
-          <Image src="/GitHub-Mark-64px.png" layout="fixed" width={16} height={16} />
+          <Image src="/GitHub-Mark-64px.png" alt="GitHub Logo" layout="fixed" width={16} height={16} />
           <span>/pinnouse</span>
         </a>
         <a className={styles.link} href="https://twitter.com/pinnouse">
-          <Image src="/Twitter_Logo_Blue.png" layout="fixed" width={16} height={16} />
+          <Image src="/Twitter_Logo_Blue.png" alt="Twitter Logo" layout="fixed" width={16} height={16} />
           <span>@pinnouse</span>
         </a>
         <a className={styles.link} href="https://www.linkedin.com/in/nwong33/">
-          <Image src="/LI-In-Bug.png" layout="fixed" width={16} height={16} />
+          <Image src="/LI-In-Bug.png" alt="LinkedIn Logo" layout="fixed" width={16} height={16} />
           <span>/nwong33</span>
         </a>
         <a className={styles.link}>
-          <Image src="/f9bb9c4af2b9c32a2c5ee0014661546d.png" layout="fixed" width={16} height={16} />
+          <Image src="/f9bb9c4af2b9c32a2c5ee0014661546d.png" alt="Discord Logo" layout="fixed" width={16} height={16} />
           <span>pinnouse#7766</span>
         </a>
       </div>
@@ -92,8 +92,8 @@ const Home: NextPage = () => {
 
         <h2 className={styles.subtitle}>About Myself</h2>
         <p className={styles.description}>
-          Hi there 👋! I'm Nicholas, but you can call me Nick.
-          I'm a passionate developer with a drive to realize great solutions.
+          Hi there 👋! I&apos;m Nicholas, but you can call me Nick.
+          I&apos;m a passionate developer with a drive to realize great solutions.
           Currently, I am pursuing a degree in Computer Science and Mathematics, leading into my 4th year at the University of Toronto.
           <br />
           <br />
@@ -102,11 +102,11 @@ const Home: NextPage = () => {
         </p>
 
         <h2 className={styles.subtitle}>Large Projects</h2>
-        <p className={styles.description}>A list of projects I've done that I think best showcase my skillset and passion!</p>
+        <p className={styles.description}>A list of projects I&apos;ve done that I think best showcase my skillset and passion!</p>
         <Portfolio />
 
         <h2 className={styles.subtitle}>Open Source Projects</h2>
-        <p className={styles.description}>The cards may take a moment to load based off GitHub's API. When loaded, you can hover over the colours to see which language it represents.</p>
+        <p className={styles.description}>The cards may take a moment to load based off GitHub&apos;s API. When loaded, you can hover over the colours to see which language it represents.</p>
         <GitHubCard repositories={repositories} />
       </main>
 

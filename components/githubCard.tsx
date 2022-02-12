@@ -1,6 +1,7 @@
 import useSWR from 'swr'
 import Markdown from 'markdown-to-jsx'
 import styles from '../styles/Grid.module.css'
+import Image from 'next/image'
 const yaml = require('js-yaml')
 
 const fetcher = async (url: RequestInfo) => {
@@ -101,11 +102,11 @@ function Card(repository: Repository, colorResponse: ColorResponse) {
             <Markdown options={{forceBlock: true}}>{repository.description}</Markdown>
             <div className={styles.stats}>
                 <div className={styles.inlineStat}>
-                    <img src="/star.svg" alt="Stars" width={16} height={16} />
+                    <Image src="/star.svg" alt="Stars" width={16} height={16} />
                     <span>{data.stargazers_count}</span>
                 </div>
                 <div className={styles.inlineStat}>
-                    <img src="/fork.svg" alt="Forks" width={16} height={16} />
+                    <Image src="/fork.svg" alt="Forks" width={16} height={16} />
                     <span>{data.forks_count}</span>
                 </div>
             </div>

@@ -1,0 +1,146 @@
+.container {
+  padding: 0 1rem;
+}
+
+.container > * {
+  padding: 4rem 4rem;
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title {
+  margin-top: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.subtitle {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2rem;
+}
+
+.description {
+  max-width: 1024px;
+}
+
+.leftBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.leftBar > img {
+  align-self: center;
+}
+
+.leftBar > h1 {
+  margin-bottom: 0;
+}
+
+.leftBar > p {
+  margin-top: 0;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #4e4e4e;
+  transition: all 200ms;
+}
+
+a.link {
+  text-decoration: underline;
+}
+
+a.link:hover {
+  color: #999999;
+}
+
+.link > span {
+  padding-left: .3rem;
+}
+
+.profile {
+  border: 4px solid black !important;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .leftBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    min-width: var(--bar-width);
+    align-items: flex-start;
+    border-right: 4px solid white;
+    color: white;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px 4px var(--shadow-color);
+  }
+
+  .leftBar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/guv0f0vks2p51.jpg);
+    background-size: cover;
+    z-index: -1;
+    transform: scale(1.2);
+    filter: blur(5px);
+  }
+
+  .link {
+    color: #cacaca;
+    margin-left: .6rem;
+  }
+
+  .profile {
+    border-color: white !important;
+  }
+
+  .link img {
+    filter: brightness(200);
+  }
+
+  .leftBar > * {
+    text-align: left;
+  }
+
+  .main {
+    position: relative;
+    margin-left: 8rem;
+    left: calc(var(--bar-width));
+    max-width: calc(100% - var(--bar-width) - 8rem);
+  }
+}

@@ -102,11 +102,11 @@ function Card(repository: Repository, colorResponse: ColorResponse) {
             <Markdown options={{forceBlock: true}}>{repository.description}</Markdown>
             <div className={styles.stats}>
                 <div className={styles.inlineStat}>
-                    <Image src="/star.svg" alt="Stars" width={16} height={16} />
+                    <img src="/star.svg" alt="Stars" width={16} height={16} />
                     <span>{data.stargazers_count}</span>
                 </div>
                 <div className={styles.inlineStat}>
-                    <Image src="/fork.svg" alt="Forks" width={16} height={16} />
+                    <img src="/fork.svg" alt="Forks" width={16} height={16} />
                     <span>{data.forks_count}</span>
                 </div>
             </div>

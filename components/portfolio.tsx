@@ -6,7 +6,7 @@ function Portfolio() {
     return <div className={styles.grid}>
         <div className={styles.card}>
             <div className={styles.image}>
-                <Image src='/portfolio/chat.gif' alt='AI Chatbot' width={1280} height={720} />
+                <img src='/portfolio/chat.gif' alt='AI Chatbot' width={1280} height={720} />
             </div>
             <div className={styles.info}>
                 <h3>AI Chatbot</h3>
@@ -22,7 +22,7 @@ function Portfolio() {
         </div>
         <div className={styles.card}>
             <div className={styles.image}>
-                <Image src='/portfolio/oslyn.gif' alt='ZeroTwo-Bot Home Page' width={1280} height={720} />
+                <img src='/portfolio/oslyn.gif' alt='ZeroTwo-Bot Home Page' width={1280} height={720} />
             </div>
             <div className={styles.info}>
                 <h3>Oslyn</h3>
@@ -36,7 +36,7 @@ function Portfolio() {
         </div>
         <div className={styles.card}>
             <div className={styles.image}>
-                <Image src='/portfolio/ztb.gif' alt='ZeroTwo-Bot Home Page' width={1280} height={720} />
+                <img src='/portfolio/ztb.gif' alt='ZeroTwo-Bot Home Page' width={1280} height={720} />
             </div>
             <div className={styles.info}>
                 <h3>ZeroTwo-Bot</h3>

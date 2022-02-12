@@ -63,24 +63,24 @@ const Home: NextPage = () => {
       </Head>
 
       <div className={styles.leftBar}>
-        <Image className={styles.profile} src="/pfp.png" alt="Profile Picture" layout="fixed" width={260} height={260} />
+        <img className={styles.profile} src="/pfp.png" alt="Profile Picture" width={260} height={260} />
         <h1>Nicholas Wong</h1>
         <p>Bringing ideas to life one line at a time.</p>
         <a className={styles.link} href='mailto:nichol.wong@mail.utoronto.ca'>📧nichol.wong@mail.utoronto.ca</a>
         <a className={styles.link} href="https://github.com/pinnouse">
-          <Image src="/GitHub-Mark-64px.png" alt="GitHub Logo" layout="fixed" width={16} height={16} />
+          <img src="/GitHub-Mark-64px.png" alt="GitHub Logo" width={16} height={16} />
           <span>/pinnouse</span>
         </a>
         <a className={styles.link} href="https://twitter.com/pinnouse">
-          <Image src="/Twitter_Logo_Blue.png" alt="Twitter Logo" layout="fixed" width={16} height={16} />
+          <img src="/Twitter_Logo_Blue.png" alt="Twitter Logo" width={16} height={16} />
           <span>@pinnouse</span>
         </a>
         <a className={styles.link} href="https://www.linkedin.com/in/nwong33/">
-          <Image src="/LI-In-Bug.png" alt="LinkedIn Logo" layout="fixed" width={16} height={16} />
+          <img src="/LI-In-Bug.png" alt="LinkedIn Logo" width={16} height={16} />
           <span>/nwong33</span>
         </a>
         <a className={styles.link}>
-          <Image src="/f9bb9c4af2b9c32a2c5ee0014661546d.png" alt="Discord Logo" layout="fixed" width={16} height={16} />
+          <img src="/f9bb9c4af2b9c32a2c5ee0014661546d.png" alt="Discord Logo" width={16} height={16} />
           <span>pinnouse#7766</span>
         </a>
       </div>

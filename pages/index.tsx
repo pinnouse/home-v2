@@ -115,6 +115,7 @@ const Home: NextPage = () => {
           <br />
           Outside of studies, I play guitar, piano, and alto saxophone.
           I also have an interest in modern Japanese culture (from music and food to games and anime).
+          Apart from a bunch of hobbies, I like to stay educated on maintaining a <b>good physique</b> and <b>mental health</b>.
         </p>
 
         <h2 className={styles.subtitle}>Large Projects</h2>

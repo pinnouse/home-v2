@@ -7,14 +7,29 @@ import styles from '../styles/Home.module.css'
 
 const repositories = [
   {
-    title: 'ZeroTwo Bot',
-    description: 'My first large project. I learned the most from this project: developing software, deploying/hosting an application on the cloud, maintaining and scaling, interacting with APIs, and security/authentication. This project has given me lots of opportunity to explore technology and also expose me to a lot of great projects and developers.',
-    url: 'pinnouse/ZeroTwoBot',
+    title: 'Hugging Face Tokenizers',
+    description: 'Collection of tokenizers used in natural language processing (NLP) applications. Navigating a large project used by many researchers and enterprises, I contributed to the developer experience (DX) of the tokenizers.',
+    url: 'huggingface/tokenizers',
+  },
+  {
+    title: 'Nuxt/Auth',
+    description: 'Authentication module for the NUXT webapp framework. My main contribution was to head the Discord integration for authentication.',
+    url: 'nuxt-community/auth-module',
   },
   {
     title: 'Ani-SS',
     description: 'Building an interface for WebGL shaders to behave on browsers. This project was inspired by bloc97\'s [Anime4K project](https://github.com/bloc97/Anime4K) that were intelligently crafted shaders to enhance or recover visual quality of a video or image.',
     url: 'pinnouse/ani-ss',
+  },
+  {
+    title: 'ZeroTwo Bot',
+    description: 'My first large project. I learned the most from this project: developing software, deploying/hosting an application on the cloud, maintaining and scaling, interacting with APIs, and security/authentication. This project has given me lots of opportunity to explore technology and also expose me to a lot of great projects and developers.',
+    url: 'pinnouse/ZeroTwoBot',
+  },
+  {
+    title: 'Lodestone',
+    description: 'Open source project to manage Minecraft servers with the goal of bringing security and ease of use to the everyday player that wanted to start a server.',
+    url: 'lodestone-team/lodestone',
   },
   {
     title: 'Amadeus',
@@ -92,21 +107,43 @@ const Home: NextPage = () => {
 
         <h2 className={styles.subtitle}>About Myself</h2>
         <p className={styles.description}>
-          Hi there 👋! I&apos;m Nicholas, but you can call me Nick.
+          Hi there 👋! I&apos;m Nicholas, but you can call me <b>Nick</b>.
           I&apos;m a passionate developer with a drive to realize great solutions.
-          Currently, I am pursuing a degree in Computer Science and Mathematics, leading into my 4th year at the University of Toronto.
+          Currently, I am pursuing a <b>double degree in Computer Science and Mathematics</b>, in my 4th year at the University of Toronto.
+          I am interested in pursuing continued studies, <b>researching</b> deep learning and transformers further.
           <br />
           <br />
-          I have lots of interests and hobbies, some of the topics I love are: artificial intelligence, music, illustration, anime, and games.
-          I enjoy playing and singing with my guitar and showing off my skills in StarCraft 2.
+          Outside of studies, I play guitar, piano, and alto saxophone.
+          I also have an interest in modern Japanese culture (from music and food to games and anime).
         </p>
 
         <h2 className={styles.subtitle}>Large Projects</h2>
         <p className={styles.description}>A list of projects I&apos;ve done that I think best showcase my skillset and passion!</p>
         <Portfolio />
 
+        <h2 className={styles.subtitle}>Work Experience</h2>
+        <ul>
+          <li>
+            Royal Bank of Canada (2021 &ndash; 2022) &mdash; Technical System Analyst
+            <ul>
+              <li>Developed and documented automation tools, saving thousands of support hours of work</li>
+              <li>Presented demonstrations for 500+ users</li>
+              <li>Led adoption days to introduce and give tutorial on tool usage</li>
+            </ul>
+            </li>
+          <li>
+            University of Toronto (2020 &ndash; 2021) &mdash; Teaching Assistant
+            <ul>
+              <li>CSC108 &ndash; Lecture assistant, assisting in leading small group discussion and support during lecture time</li>
+            </ul>
+            </li>
+        </ul>
+
         <h2 className={styles.subtitle}>Open Source Projects</h2>
-        <p className={styles.description}>The cards may take a moment to load based off GitHub&apos;s API. When loaded, you can hover over the colours to see which language it represents.</p>
+        <p className={styles.description}>
+          I believe open source projects are vital in benefiting all.
+          The following are a list of open source projects I have created or contributed to.
+        </p>
         <GitHubCard repositories={repositories} />
       </main>
 

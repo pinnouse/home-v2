@@ -85,39 +85,54 @@ function ColorTip(language: (number | string)[], totalBytes: number) {
     )
 }
 
+// function Card(repository: Repository, colorResponse: ColorResponse) {
+//     const { data, isLoading, isError } = useRepo(repository.url)
+//     const { languageData, isLoading: isLanguageLoading, isError: isLanguageError } = useLanguages(repository.url)
+//     if (isLoading || isError || isLanguageLoading || isLanguageError || colorResponse.isLoading || colorResponse.isError) return (
+//         <div className={styles.card} key={repository.url}>
+//             <h3>{repository.title}</h3>
+//             <Markdown options={{forceBlock: true}}>{repository.description}</Markdown>
+//             <a href={`https://github.com/${repository.url}`} style={{justifySelf: 'flex-end'}}>{repository.url}</a>
+//         </div>
+//     )
+//     const totalBytes = Object.values<number>(languageData).reduce((a: number, b: number) => a + b, 0)
+//     return (
+//         <div className={styles.card} key={repository.url}>
+//             <h3>{repository.title}</h3>
+//             <Markdown options={{forceBlock: true}}>{repository.description}</Markdown>
+//             <div className={styles.stats}>
+//                 <div className={styles.inlineStat}>
+//                     <img src="/star.svg" alt="Stars" width={16} height={16} />
+//                     <span>{data.stargazers_count}</span>
+//                 </div>
+//                 <div className={styles.inlineStat}>
+//                     <img src="/fork.svg" alt="Forks" width={16} height={16} />
+//                     <span>{data.forks_count}</span>
+//                 </div>
+//             </div>
+//             <span>Primary Language: <i>{data.language}</i></span>
+//             <div className={styles.colors}>
+//                 {Object.entries<string | number>(languageData).map(language => Color(language, colorResponse.data, totalBytes))}
+//             </div>
+//             <div className={styles.colorsToolTip}>
+//                 {Object.entries<string | number>(languageData).map(language => ColorTip(language, totalBytes))}
+//             </div>
+//             <a href={`https://github.com/${repository.url}`} style={{justifySelf: 'flex-end'}}>{repository.url}</a>
+//         </div>
+//     )
+// }
+
 function Card(repository: Repository, colorResponse: ColorResponse) {
-    const { data, isLoading, isError } = useRepo(repository.url)
-    const { languageData, isLoading: isLanguageLoading, isError: isLanguageError } = useLanguages(repository.url)
-    if (isLoading || isError || isLanguageLoading || isLanguageError || colorResponse.isLoading || colorResponse.isError) return (
-        <div className={styles.card} key={repository.url}>
-            <h3>{repository.title}</h3>
-            <Markdown options={{forceBlock: true}}>{repository.description}</Markdown>
-            <a href={`https://github.com/${repository.url}`} style={{justifySelf: 'flex-end'}}>{repository.url}</a>
-        </div>
-    )
-    const totalBytes = Object.values<number>(languageData).reduce((a: number, b: number) => a + b, 0)
+    const d = new Date()
+    const randomHash = `abc${d.getDate()}${d.getMonth()}${d.getFullYear()}`
     return (
         <div className={styles.card} key={repository.url}>
             <h3>{repository.title}</h3>
             <Markdown options={{forceBlock: true}}>{repository.description}</Markdown>
-            <div className={styles.stats}>
-                <div className={styles.inlineStat}>
-                    <img src="/star.svg" alt="Stars" width={16} height={16} />
-                    <span>{data.stargazers_count}</span>
-                </div>
-                <div className={styles.inlineStat}>
-                    <img src="/fork.svg" alt="Forks" width={16} height={16} />
-                    <span>{data.forks_count}</span>
-                </div>
-            </div>
-            <span>Primary Language: <i>{data.language}</i></span>
-            <div className={styles.colors}>
-                {Object.entries<string | number>(languageData).map(language => Color(language, colorResponse.data, totalBytes))}
-            </div>
-            <div className={styles.colorsToolTip}>
-                {Object.entries<string | number>(languageData).map(language => ColorTip(language, totalBytes))}
-            </div>
-            <a href={`https://github.com/${repository.url}`} style={{justifySelf: 'flex-end'}}>{repository.url}</a>
+            <a href={`https://github.com/${repository.url}`} style={{display: 'block', justifySelf: 'flex-end'}}>
+                <img src={`https://opengraph.githubassets.com/${randomHash}/${repository.url}`} alt={`${repository.title} repo image`}></img>
+                {repository.url}
+            </a>
         </div>
     )
 }

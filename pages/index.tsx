@@ -96,7 +96,7 @@ const Home: NextPage = () => {
         </a>
         <a className={styles.link}>
           <img src="/f9bb9c4af2b9c32a2c5ee0014661546d.png" alt="Discord Logo" width={16} height={16} />
-          <span>pinnouse#7766</span>
+          <span>pinnouse</span>
         </a>
       </div>
 

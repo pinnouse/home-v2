@@ -81,7 +81,7 @@ const Home: NextPage = () => {
         <img className={styles.profile} src="/pfp.png" alt="Profile Picture" width={260} height={260} />
         <h1>Nicholas Wong</h1>
         <p>Bringing ideas to life one line at a time.</p>
-        <a className={styles.link} href='mailto:nichol.wong@mail.utoronto.ca'>📧nichol.wong@mail.utoronto.ca</a>
+        <a className={styles.link} href='mailto:nichol.wong@mail.utoronto.ca'>📧 nichol.wong@mail.utoronto.ca</a>
         <a className={styles.link} href="https://github.com/pinnouse">
           <img src="/GitHub-Mark-64px.png" alt="GitHub Logo" width={16} height={16} />
           <span>/pinnouse</span>
@@ -113,13 +113,17 @@ const Home: NextPage = () => {
           I am interested in pursuing continued studies, <b>researching</b> deep learning and transformers further.
           <br />
           <br />
+          As a developer, I have professional experience in automation software and web development.
+          <br />
+          <br />
           Outside of studies, I play guitar, piano, and alto saxophone.
-          I also have an interest in modern Japanese culture (from music and food to games and anime).
+          I enjoy listening to all types of music, but especially jpop and classical.
+          I am also trying to learn a few languages: Japanese, and Korean, whilst brushing up on my Cantonese.
           Apart from a bunch of hobbies, I like to stay educated on maintaining a <b>good physique</b> and <b>mental health</b>.
         </p>
 
         <h2 className={styles.subtitle}>Large Projects</h2>
-        <p className={styles.description}>A list of projects I&apos;ve done that I think best showcase my skillset and passion!</p>
+        <p className={styles.description}>A list of projects that I have been a part of, that I think best showcase my skillset and passion!</p>
         <Portfolio />
 
         <h2 className={styles.subtitle}>Work Experience</h2>

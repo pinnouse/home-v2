@@ -81,7 +81,7 @@ const Home: NextPage = () => {
         <img className={styles.profile} src="/pfp.png" alt="Profile Picture" width={260} height={260} />
         <h1>Nicholas Wong</h1>
         <p>Bringing ideas to life one line at a time.</p>
-        <a className={styles.link} href='mailto:nichol.wong@mail.utoronto.ca'>📧nichol.wong@mail.utoronto.ca</a>
+        <a className={styles.link} href='mailto:niwong@proton.me'>📧niwong@proton.me</a>
         <a className={styles.link} href="https://github.com/pinnouse">
           <img src="/GitHub-Mark-64px.png" alt="GitHub Logo" width={16} height={16} />
           <span>/pinnouse</span>
@@ -131,13 +131,13 @@ const Home: NextPage = () => {
               <li>Presented demonstrations for 500+ users</li>
               <li>Led adoption days to introduce and give tutorial on tool usage</li>
             </ul>
-            </li>
+          </li>
           <li>
             University of Toronto (2020 &ndash; 2021) &mdash; Teaching Assistant
             <ul>
               <li>CSC108 &ndash; Lecture assistant, assisting in leading small group discussion and support during lecture time</li>
             </ul>
-            </li>
+          </li>
         </ul>
 
         <h2 className={styles.subtitle}>Open Source Projects</h2>

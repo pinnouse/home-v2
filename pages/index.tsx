@@ -112,7 +112,8 @@ const Home: NextPage = () => {
         </a>
         <a className={styles.link} href="https://twitter.com/pinnouse">
           <img
-            src="/Twitter_Logo_Blue.png"
+            // src="/Twitter_Logo_Blue.png"
+            src="/logo.svg"
             alt="Twitter Logo"
             width={16}
             height={16}

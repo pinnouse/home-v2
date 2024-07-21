@@ -141,12 +141,9 @@ const Home: NextPage = () => {
         <h2 className={styles.subtitle}>About Myself</h2>
         <p className={styles.description}>
           Hi there 👋! I&apos;m Nicholas, but you can call me <b>Nick</b>.
-          I&apos;m a passionate developer with a drive to realize great
-          solutions. Currently, I am pursuing a{" "}
-          <b>double degree in Computer Science and Mathematics</b>, in my 4th
-          year at the University of Toronto. I am interested in pursuing
-          continued studies, <b>researching</b> deep learning and transformers
-          further.
+          I&apos;m a passionate developer with a drive to realize great solutions.
+          I have an <b>Honours Bachelor of Science (HBSc) in Computer Science and Mathematics</b> from the University of Toronto.
+          And I am interested in deep learning with transformers as well as accessible and beautiful software for both users and developers.
           <br />
           <br />
           Outside of studies, I play guitar, piano, and alto saxophone. I also
@@ -166,8 +163,14 @@ const Home: NextPage = () => {
         <h2 className={styles.subtitle}>Work Experience</h2>
         <ul>
           <li>
-            Royal Bank of Canada (2021 &ndash; 2022) &mdash; Technical System
-            Analyst
+            Rotman Research Institute at Baycrest (2024) &mdash; Summer Research Student
+            <ul>
+              <li>Investigated neural network performance at varying levels of audio impairment</li>
+              <li>Prepared environments for piloting experiments with new hardware and sensors</li>
+            </ul>
+          </li>
+          <li>
+            Royal Bank of Canada (2021 &ndash; 2022) &mdash; Technical System Analyst
             <ul>
               <li>
                 Developed and documented automation tools, saving thousands of
@@ -199,7 +202,7 @@ const Home: NextPage = () => {
         <GitHubCard repositories={repositories} />
       </main>
 
-      <footer className={styles.footer}>© 2022 Nicholas Wong</footer>
+      <footer className={styles.footer}>© 2024 Nicholas Wong</footer>
     </div>
   );
 };

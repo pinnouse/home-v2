@@ -21,7 +21,7 @@ function Portfolio() {
         </div>
         <div className={styles.card}>
             <div className={styles.image}>
-                <img src='/portfolio/lodestone.gif' alt='Lodestone Home Page' width={1280} height={720} />
+                <img src='/portfolio/lodestone.png' alt='Lodestone Home Page' width={1280} height={720} />
             </div>
             <div className={styles.info}>
                 <h3>Lodestone</h3>

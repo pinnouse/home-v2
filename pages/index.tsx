@@ -146,18 +146,17 @@ const Home: NextPage = () => {
           And I am interested in deep learning with transformers as well as accessible and beautiful software for both users and developers.
           <br />
           <br />
-          Outside of studies, I play guitar, piano, and alto saxophone. I also
-          have an interest in modern Japanese culture (from music and food to
-          games and anime). Apart from a bunch of hobbies, I like to stay
-          educated on maintaining a <b>good physique</b> and{" "}
-          <b>mental health</b>.
+          As a developer, I have professional experience in automation software and web development.
+          <br />
+          <br />
+          Outside of studies, I play guitar, piano, and alto saxophone.
+          I enjoy listening to all types of music, but especially jpop and classical.
+          I am also trying to learn a few languages: Japanese, and Korean, whilst brushing up on my Cantonese.
+          Apart from a bunch of hobbies, I like to stay educated on maintaining a <b>good physique</b> and <b>mental health</b>.
         </p>
 
         <h2 className={styles.subtitle}>Large Projects</h2>
-        <p className={styles.description}>
-          A list of projects I&apos;ve done that I think best showcase my
-          skillset and passion!
-        </p>
+        <p className={styles.description}>A list of projects that I have been a part of, that I think best showcase my skillset and passion!</p>
         <Portfolio />
 
         <h2 className={styles.subtitle}>Work Experience</h2>

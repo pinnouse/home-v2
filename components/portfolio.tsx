@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Markdown from 'markdown-to-jsx'
 import styles from '../styles/Portfolio.module.css'
 
@@ -22,7 +21,24 @@ function Portfolio() {
         </div>
         <div className={styles.card}>
             <div className={styles.image}>
-                <img src='/portfolio/oslyn.gif' alt='ZeroTwo-Bot Home Page' width={1280} height={720} />
+                <img src='/portfolio/lodestone.png' alt='Lodestone Home Page' width={1280} height={720} />
+            </div>
+            <div className={styles.info}>
+                <h3>Lodestone</h3>
+                <h4>General game server management tool</h4>
+                <Markdown options={{forceBlock: true}}>
+                    Server managing tool designed with security in mind.
+                    Built with rust and using deno to sandbox custom scripts, this project is a large undertaking to create a usable, open-source tool.
+                </Markdown>
+                <Markdown options={{forceBlock: true}}>
+                    Not only is it extremely functional, it is also beautifully designed (with UX in mind): altogether being a product you *want* to use, not just *need* to.
+                </Markdown>
+                <a href={`https://github.com/Lodestone-Team/lodestone`}>Lodestone Repository</a>
+            </div>
+        </div>
+        <div className={styles.card}>
+            <div className={styles.image}>
+                <img src='/portfolio/oslyn.gif' alt='Oslyn Project Home Page' width={1280} height={720} />
             </div>
             <div className={styles.info}>
                 <h3>Oslyn</h3>

@@ -74,6 +74,10 @@
   align-items: center;
   color: #4e4e4e;
   transition: all 200ms;
+  margin-top: .5rem;
+  padding: 8px 12px;
+  border-radius: 3px;
+  background-color: rgba(40, 40, 40, 0.1);
 }
 
 a.link {
@@ -97,7 +101,8 @@ a.link:hover {
   margin-top: 0.5rem;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) { */
+@media (min-width: 1024px) {
   .leftBar {
     position: fixed;
     left: 0;
@@ -128,6 +133,8 @@ a.link:hover {
   .link {
     color: #cacaca;
     margin-left: .6rem;
+    margin-top: initial;
+    padding: initial;
   }
 
   .profile {

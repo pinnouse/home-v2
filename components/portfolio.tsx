@@ -5,18 +5,19 @@ function Portfolio() {
     return <div className={styles.grid}>
         <div className={styles.card}>
             <div className={styles.image}>
-                <img src='/portfolio/chat.gif' alt='AI Chatbot' width={1280} height={720} />
+                <img src='/portfolio/oslyn.gif' alt='Oslyn Project Home Page' width={1280} height={720} />
             </div>
             <div className={styles.info}>
-                <h3>AI Chatbot</h3>
-                <h4>Open domain AI powered conversational chatbot</h4>
+                <h3>Oslyn</h3>
+                <h4>Digital AI powered musician companion</h4>
                 <Markdown options={{forceBlock: true}}>
-                    Ongoing learning and building of an open domain AI chatbot.
-                    Designed and built a lot of the architecture of the high level model.
-                    Continuing to prove with cutting-edge research and development in the NLP space.
+                    Became a lead developer in a lot of the backend and AI functionality, eventually pushing the project as the **AI team lead**.
+                    Worked together with a small group of passionate developers; mentoring, growing, and inspiring one another.
                 </Markdown>
-                <a href={`https://github.com/pinnouse/amadeus`}>Newest Model (built with performers)</a>
-                <a href={`https://github.com/pinnouse/ReinaChat`}>Older Model</a>
+                <Markdown options={{forceBlock: true}}>
+                    Utilized AWS services such as: **Amplify**, **Lambda**, **SageMaker**, **S3**, **EC2**, **DynamoDB**.
+                </Markdown>
+                <a href={`https://oslyn.io`}>Oslyn Website</a>
             </div>
         </div>
         <div className={styles.card}>
@@ -38,23 +39,6 @@ function Portfolio() {
         </div>
         <div className={styles.card}>
             <div className={styles.image}>
-                <img src='/portfolio/oslyn.gif' alt='Oslyn Project Home Page' width={1280} height={720} />
-            </div>
-            <div className={styles.info}>
-                <h3>Oslyn</h3>
-                <h4>Digital AI powered musician companion</h4>
-                <Markdown options={{forceBlock: true}}>
-                    Became a lead developer in a lot of the backend and AI functionality, eventually pushing the project as the **AI team lead**.
-                    Worked together with a small group of passionate developers; mentoring, growing, and inspiring one another.
-                </Markdown>
-                <Markdown options={{forceBlock: true}}>
-                    Utilized AWS services such as: **Amplify**, **Lambda**, **SageMaker**, **S3**, **EC2**, **DynamoDB**.
-                </Markdown>
-                <a href={`https://oslyn.io`}>Oslyn Website</a>
-            </div>
-        </div>
-        <div className={styles.card}>
-            <div className={styles.image}>
                 <img src='/portfolio/ztb.gif' alt='ZeroTwo-Bot Home Page' width={1280} height={720} />
             </div>
             <div className={styles.info}>
@@ -69,6 +53,22 @@ function Portfolio() {
                     As of 2023, the project was successfully bought out by Joyn.gg and the web apps have been newly rewritten.
                 </Markdown>
                 <a href={`https://zerotwo.bot`}>Home Page (design deprecated)</a>
+            </div>
+        </div>
+        <div className={styles.card}>
+            <div className={styles.image}>
+                <img src='/portfolio/chat.gif' alt='AI Chatbot' width={1280} height={720} />
+            </div>
+            <div className={styles.info}>
+                <h3>AI Chatbot</h3>
+                <h4>Open domain AI powered conversational chatbot</h4>
+                <Markdown options={{forceBlock: true}}>
+                    Ongoing learning and building of an open domain AI chatbot.
+                    Before the advent of large language models I would design and build a lot of the architecture of my own language models.
+                    Continuing to prove with cutting-edge research and development in the NLP space.
+                </Markdown>
+                <a href={`https://github.com/pinnouse/amadeus`}>Newest Model (built with performers)</a>
+                <a href={`https://github.com/pinnouse/ReinaChat`}>Older Model</a>
             </div>
         </div>
     </div>

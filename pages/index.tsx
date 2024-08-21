@@ -146,13 +146,14 @@ const Home: NextPage = () => {
           And I am interested in deep learning with transformers as well as accessible and beautiful software for both users and developers.
           <br />
           <br />
-          As a developer, I have professional experience in automation software and web development.
+          As a developer I have professional experience in automation software and web development.
+          I am also familiar in mobile development, test-driven development, and functional programming.
           <br />
           <br />
-          Outside of studies, I play guitar, piano, and alto saxophone.
-          I enjoy listening to all types of music, but especially jpop and classical.
-          I am also trying to learn a few languages: Japanese, and Korean, whilst brushing up on my Cantonese.
-          Apart from a bunch of hobbies, I like to stay educated on maintaining a <b>good physique</b> and <b>mental health</b>.
+          Outside of software I play guitar, piano, and alto saxophone.
+          I enjoy listening to all types of music especially jpop and classical.
+          I am also trying to learn Japanese whilst improving my Cantonese.
+          Apart from a bunch of hobbies I like to stay educated on maintaining a <b>good physique</b> and <b>mental health</b>.
         </p>
 
         <h2 className={styles.subtitle}>Large Projects</h2>
@@ -162,14 +163,14 @@ const Home: NextPage = () => {
         <h2 className={styles.subtitle}>Work Experience</h2>
         <ul>
           <li>
-            Rotman Research Institute at Baycrest (2024) &mdash; Summer Research Student
+            <b>Rotman Research Institute at Baycrest</b> (2024) &mdash; Summer Research Student
             <ul>
               <li>Investigated neural network performance at varying levels of audio impairment</li>
               <li>Prepared environments for piloting experiments with new hardware and sensors</li>
             </ul>
           </li>
           <li>
-            Royal Bank of Canada (2021 &ndash; 2022) &mdash; Technical System Analyst
+            <b>Royal Bank of Canada</b> (2021 &ndash; 2022) &mdash; Technical System Analyst
             <ul>
               <li>
                 Developed and documented automation tools, saving thousands of
@@ -182,7 +183,7 @@ const Home: NextPage = () => {
             </ul>
           </li>
           <li>
-            University of Toronto (2020 &ndash; 2021) &mdash; Teaching Assistant
+            <b>University of Toronto</b> (2020 &ndash; 2021) &mdash; Teaching Assistant
             <ul>
               <li>
                 CSC108 &ndash; Lecture assistant, assisting in leading small

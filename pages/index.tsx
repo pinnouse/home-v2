@@ -91,7 +91,7 @@ const Home: NextPage = () => {
       <div className={styles.leftBar}>
         <img
           className={styles.profile}
-          src="/pfp.png"
+          src="/PXL_headshot.jpg"
           alt="Profile Picture"
           width={260}
           height={260}

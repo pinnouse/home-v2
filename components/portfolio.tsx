@@ -52,7 +52,7 @@ function Portfolio() {
                 <Markdown options={{forceBlock: true}}>
                     As of 2023, the project was successfully bought out by Joyn.gg and the web apps have been newly rewritten.
                 </Markdown>
-                <a href={`https://zerotwo.bot`}>Home Page (design deprecated)</a>
+                <a href={`https://web.archive.org/web/20220203200023/https://zerotwo.bot/`}>Archived Home Page</a>
             </div>
         </div>
         <div className={styles.card}>
